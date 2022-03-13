@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://andr.is-a.dev/sitemap.xml
