@@ -1,6 +1,7 @@
 /node_modules
 /.pnp
 .pnp.js
+*.log
 
 # testing
 /coverage
@@ -15,9 +16,15 @@
 
 # misc
 .DS_Store
-.env*
+.env
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Contentlayer
+.contentlayer
+
+public/sitemap.xml
+public/feed.xml
