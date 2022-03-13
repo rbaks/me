@@ -44,5 +44,11 @@
     "rehype-slug": "5.0.1",
     "remark-gfm": "^3.0.1",
     "rss": "1.2.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }
