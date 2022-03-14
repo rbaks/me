@@ -33,12 +33,27 @@ export default function About() {
             </li>
             <li>
               Facebook:{' '}
-              <a href={siteMetadata.social.facebook}>Andrianina Rabakoson</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={siteMetadata.social.facebook}
+              >
+                Andrianina Rabakoson
+              </a>
+            </li>
+            <li>
+              Email me:{' '}
+              <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
+            </li>
+            <li>
+              <a href="AndrianinaResume.pdf" download="AndrianinaResume">
+                Download my Resume
+              </a>
             </li>
           </ul>
           <h2>Bio</h2>
-          <h3>Job Title</h3>
-          <p>Lee Robinson, Director of Developer Relations at Vercel</p>
+          <h3>Headline</h3>
+          <p>Andrianina Rabakoson, Software developer and blogger</p>
           <h3>Long, 3rd Person</h3>
           <p>
             Lee Robinson is the Director of Developer Relations at{' '}
@@ -71,8 +86,8 @@ export default function About() {
           </p>
           <h3>Education</h3>
           <p>
-            Lee Robinson graduated from Iowa State University with a BS in
-            Computer Engineering.
+            Andrianina Rabakoson graduated in 2021 from IT University of
+            Madagascar with a BS in Computer Engineering.
           </p>
         </div>
       </div>
