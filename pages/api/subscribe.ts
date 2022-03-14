@@ -13,7 +13,7 @@ export default async function handler(
   const result = await fetch('https://www.getrevue.co/api/v2/subscribers', {
     method: 'POST',
     headers: {
-      Authorization: `Token ${process.env.NEXT_APP_REVUE_API_KEY}`,
+      Authorization: `Token ${process.env.REACT_APP_REVUE_API_KEY}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ email })
