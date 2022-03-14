@@ -4,7 +4,8 @@ export const siteMetadata = {
     name: 'Andrianina Rabakoson',
     headLine: 'Software developer and blogger',
     zingFactor:
-      'Making a better world through code. Sharing knowledge by leveraging open source projects.'
+      'Making a better world through code. Sharing knowledge by leveraging open source projects.',
+    image: '/avatar.jpg'
   },
   social: {
     github: 'https://github.com/rbaks',
@@ -16,7 +17,6 @@ export const siteMetadata = {
   siteUrl: 'https://rbaks.github.io/andr.is-a.dev',
   siteRepo: 'https://github.com/rbaks/andr.is-a.dev',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/image-card.png',
   email: 'rabakoson@protonmail.com',
   locale: 'en-US',

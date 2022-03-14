@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 module.exports = withContentlayer()({
   swcMinify: true,
   reactStrictMode: true,
-  assetPrefix: isProd ? "/andr.is-a.dev/" : "",
+  assetPrefix: isProd ? "/andr.is-a.dev" : "",
   basePath: isProd ? "/andr.is-a.dev" : "",
   images: {
     domains: [

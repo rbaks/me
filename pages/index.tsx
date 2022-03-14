@@ -34,7 +34,7 @@ export default function Home({
               alt={siteMetadata.author.name}
               height={176}
               width={176}
-              src="/avatar.jpg"
+              src={siteMetadata.author.image}
               className="rounded-full filter grayscale"
             />
           </div>
