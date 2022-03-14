@@ -9,7 +9,7 @@ export const siteMetadata = {
   social: {
     github: 'https://github.com/rbaks',
     linkedin: 'https://www.linkedin.com/in/arabakoson/?locale=en_US',
-    facebook: 'https://facebook.com/andrianina.rabakoson.79'
+    facebook: 'https://web.facebook.com/andrianina.rabakoson.79'
   },
   language: 'en-us',
   theme: 'system',

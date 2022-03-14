@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '../components/Image';
 import Link from 'next/link';
 
 import Container from '../components/Container';
@@ -14,7 +14,6 @@ import FeaturedPostCard from 'components/FeaturedPostCard';
 export default function Home({
   featuredPosts
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  console.log(featuredPosts[0]);
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
@@ -56,7 +55,7 @@ export default function Home({
               />
             ))}
         </div>
-        <Link href="/blog">
+        <Link href="/projects">
           <a className="flex mt-2 mb-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             See all projects
             <svg

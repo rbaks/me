@@ -5,6 +5,7 @@ module.exports = withContentlayer()({
   swcMinify: true,
   reactStrictMode: true,
   assetPrefix: isProd ? "/andr.is-a.dev/" : "",
+  basePath: isProd ? "/andr.is-a.dev" : "",
   images: {
     domains: [
       'i.scdn.co' // Spotify Album Art

@@ -2,15 +2,22 @@ export const projects = [
   {
     title: 'Memebot',
     description:
-      'A Facebook Messenger Chatbot that generates memes from texts.',
+      'A Facebook Messenger Chatbot that generates memes from texts in malagasy language.',
     url: 'http://m.me/115066520196547',
     icon: 'memebot'
   },
   {
-    title: 'Agenda',
+    title: 'andr.is-a.dev',
     description:
-      'An agenda application to remind you to prepare for your beloved exams.',
-    url: 'http://m.me/115066520196547',
-    icon: 'agenda'
+      'My personal portfolio website, blog and home in the world wide web.',
+    url: 'http://andr.is-a.dev ',
+    icon: 'portfolio'
   }
+  // {
+  //   title: 'Agenda',
+  //   description:
+  //     'An agenda application to remind you to prepare for your beloved exams.',
+  //   url: 'http://m.me/115066520196547',
+  //   icon: 'agenda'
+  // }
 ];

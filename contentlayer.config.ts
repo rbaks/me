@@ -6,10 +6,12 @@ import {
 
 import readingTime from 'reading-time';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
 import rehypeSlug from 'rehype-slug';
 import rehypeCodeTitles from 'rehype-code-titles';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
+import rehypeKatex from 'rehype-katex';
 
 const computedFields: ComputedFields = {
   readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
@@ -41,11 +43,12 @@ const contentLayerConfig = makeSource({
   contentDirPath: 'data',
   documentTypes: [Blog],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkMath],
     rehypePlugins: [
       rehypeSlug,
       rehypeCodeTitles,
       rehypePrism,
+      rehypeKatex,
       [
         rehypeAutolinkHeadings,
         {
