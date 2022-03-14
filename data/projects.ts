@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Memebot',
     description:
-      'A Facebook Messenger Chatbot that generates memes from texts in malagasy language.',
+      'A Facebook Messenger Chatbot that generates memes from texts.',
     url: 'http://m.me/115066520196547',
     icon: 'memebot'
   },

@@ -47,48 +47,80 @@ export default function About() {
             </li>
             <li>
               <a href="AndrianinaResume.pdf" download="AndrianinaResume">
-                Download my Resume
+                My Resume
               </a>
             </li>
           </ul>
           <h2>Bio</h2>
           <h3>Headline</h3>
           <p>Andrianina Rabakoson, Software developer and blogger</p>
-          <h3>Long, 3rd Person</h3>
+          <h3>Summary</h3>
           <p>
-            Lee Robinson is the Director of Developer Relations at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web and leads the Next.js community. Prior to that,
-            Lee was a Senior Software Engineer focused on the frontend. An
-            educator, writer, and speaker, Lee has also created extensive
-            courses on React and Next.js.
-          </p>
-          <h3>Long, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I lead Developer Relations at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web. I'm a Next.js contributor and help
-            lead our open-source communities. I've passionate about frontend
-            development and have created courses on React, Next.js, and web
-            development. I'm an advisor and investor in early stage startups.
-          </p>
-          <h3>Short, 3rd Person</h3>
-          <p>
-            Lee Robinson is the Director of Developer Relations at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web.
-          </p>
-          <h3>Short, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I lead Developer Relations at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web.
+            Fresh graduate of a top-tier university focused on designing and
+            developing production ready software, analyzing and solving complex
+            technical problems, self motivated and dedicated to learning and
+            improving everyday.
           </p>
           <h3>Education</h3>
-          <p>
-            Andrianina Rabakoson graduated in 2021 from IT University of
-            Madagascar with a BS in Computer Engineering.
+          <p style={{ fontStyle: 'italic' }}>
+            Bachelor of Engineering, Software development, 2018 - 2021
           </p>
+          <strong>IT University</strong>, Madagascar
+          <ul>
+            <li>Procedural and object oriented programming</li>
+            <li>Software architecture design</li>
+            <li>Relational Database modeling</li>
+            <li>Full-stack web develoment</li>
+            <li>Networking systems</li>
+          </ul>
+          <h3>Industry experience</h3>
+          <strong>Ibonia</strong>, Madagascar
+          <p style={{ fontStyle: 'italic' }}>Software developer intern</p>
+          <p>
+            Responsible for designing and developing an automated database
+            migration command line tool for Moodle websites. Helped streamline
+            the migration process to avoid costly and time consuming
+            verifications. Documented and tested the tool fir use in the
+            company.
+          </p>
+          <h3>Award</h3>
+          <strong>Hackathon greendev winner</strong>, Institut français de
+          Madagascar
+          <p style={{ fontStyle: 'italic' }}>Backend and chatbot developer</p>
+          <p>
+            Successfully shipped an image search engine for endemic species of
+            Madagascar, showing dependency graphs in the process to better
+            illustrate biodiversity. Participated in a team of five to create a
+            Facebook Messenger chatbot interace for the search engine as well as
+            the image recognition system.
+          </p>
+          <h3>Skills</h3>
+          <ul>
+            <li>
+              <strong>Programming languages :</strong> Javascript, Typescript,
+              Java, Python, C, Solidity
+            </li>
+            <li>
+              <strong>Development Framework :</strong> React, Node, Next.js,
+              Java Spring, Dapp tools
+            </li>
+            <li>
+              <strong>Spoken languages :</strong> Malagasy, French (Native);
+              English (Advanced)
+            </li>
+            <li>
+              <strong>Operating systems :</strong> Fedora 35, Arch Linux,
+              Windowse
+            </li>
+          </ul>
+          <h3>Areas of interest</h3>
+          <ul>
+            <li>Open source software</li>
+            <li>Technical blogging</li>
+            <li>Data Science</li>
+            <li>Day trading</li>
+            <li>Blockchain and Crypto</li>
+          </ul>
         </div>
       </div>
     </Container>
