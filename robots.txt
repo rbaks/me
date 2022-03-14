@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rbaks.github.io/andr.is-a.dev/sitemap.xml
