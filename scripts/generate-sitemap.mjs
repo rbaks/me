@@ -3,7 +3,7 @@ import { globby } from 'globby';
 import prettier from 'prettier';
 
 const siteMetadata = {
-  siteUrl: 'https://andr.is-a.dev'
+  siteUrl: 'https://rbaks.github.io/andr.is-a.dev'
 }
 
 async function generate() {

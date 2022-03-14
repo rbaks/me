@@ -34,7 +34,8 @@ const Blog = defineDocumentType(() => ({
     publishedAt: { type: 'string', required: true },
     summary: { type: 'string', required: true },
     image: { type: 'string', required: true },
-    featured: { type: 'boolean', required: true }
+    featured: { type: 'boolean', required: true },
+    draft: { type: 'boolean', required: true }
   },
   computedFields
 }));

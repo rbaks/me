@@ -120,8 +120,10 @@ export default function Home({
 
 export function getStaticProps() {
   const featuredPosts = allBlogs
-    .map((post) => pick(post, ['slug', 'title', 'featured', 'publishedAt']))
-    .filter((post) => post.featured)
+    .map((post) =>
+      pick(post, ['slug', 'title', 'featured', 'publishedAt', 'draft'])
+    )
+    .filter((post) => post.featured && !post.draft)
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))

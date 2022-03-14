@@ -6,7 +6,7 @@ const siteMetadata = {
   author: {
     name: 'Andrianina Rabakoson'
   },
-  siteUrl: 'https://andr.is-a.dev'
+  siteUrl: 'https://rbaks.github.io/andr.is-a.dev'
 }
 
 async function generate() {

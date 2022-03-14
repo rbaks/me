@@ -27,7 +27,7 @@ export default function Blog({
           All posts
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I write about software development and tech. Use the search below to filter the posts.`}
+          {`I write about software development and tech. Use the search below to filter the posts by title or summary. More posts comming soon!`}
         </p>
         <div className="relative w-full mb-4">
           <input
@@ -68,7 +68,10 @@ export default function Blog({
 
 export function getStaticProps() {
   const posts = allBlogs
-    .map((post) => pick(post, ['slug', 'title', 'summary', 'publishedAt']))
+    .map((post) =>
+      pick(post, ['slug', 'title', 'summary', 'publishedAt', 'draft'])
+    )
+    .filter((post) => !post.draft)
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))

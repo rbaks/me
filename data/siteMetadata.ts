@@ -13,7 +13,7 @@ export const siteMetadata = {
   },
   language: 'en-us',
   theme: 'system',
-  siteUrl: 'https://andr.is-a.dev',
+  siteUrl: 'https://rbaks.github.io/andr.is-a.dev',
   siteRepo: 'https://github.com/rbaks/andr.is-a.dev',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
