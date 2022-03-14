@@ -1,11 +1,10 @@
 const { withContentlayer } = require('next-contentlayer');
-const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withContentlayer()({
   swcMinify: true,
   reactStrictMode: true,
-  assetPrefix: isProd ? "/andr.is-a.dev" : "",
-  basePath: isProd ? "/andr.is-a.dev" : "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
 
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build

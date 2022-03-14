@@ -6,19 +6,26 @@ export default function Document(props) {
       <Head>
         <link
           rel="preload"
-          href="/fonts/ibm-plex-sans-var.woff2"
+          href={`${
+            process.env.NEXT_PUBLIC_BASE_PATH || ''
+          }/fonts/ibm-plex-sans-var.woff2`}
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
-        <link href="/static/favicons/site.webmanifest" rel="manifest" />
         <link
+          href={`${
+            process.env.NEXT_PUBLIC_BASE_PATH || ''
+          }/static/favicons/favicon.ico`}
+          rel="shortcut icon"
+        />
+        {/* <link href="/static/favicons/site.webmanifest" rel="manifest" /> */}
+        {/* <link
           rel="preconnect"
           href="https://cdn.usefathom.com"
           crossOrigin=""
-        />
-        <link
+        /> */}
+        {/* <link
           href="/static/favicons/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
@@ -34,12 +41,12 @@ export default function Document(props) {
           rel="icon"
           sizes="16x16"
           type="image/png"
-        />
-        <link
+        /> */}
+        {/* <link
           color="#4a9885"
           href="/static/favicons/safari-pinned-tab.svg"
           rel="mask-icon"
-        />
+        /> */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
@@ -48,10 +55,10 @@ export default function Document(props) {
         />
         <meta content="#ffffff" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
-        <meta
+        {/* <meta
           content="/static/favicons/browserconfig.xml"
           name="msapplication-config"
-        />
+        /> */}
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
         <Main />
