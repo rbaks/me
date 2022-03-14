@@ -63,7 +63,7 @@ export default function Container(props) {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteMetadata.author.name} />
         <meta property="og:description" content={props.description} />
-        <meta property="og:title" content={siteMetadata.title} />
+        <meta property="og:title" content={props.title} />
         <meta property="og:image" content={props.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@leeerob" />

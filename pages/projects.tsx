@@ -1,11 +1,10 @@
-import Link from 'next/link';
-
 import Container from 'components/Container';
+import { siteMetadata } from 'data/siteMetadata';
 
 export default function Dashboard() {
   return (
     <Container
-      title="Dashboard – Lee Robinson"
+      title={`Projects – ${siteMetadata.author.name}`}
       description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
