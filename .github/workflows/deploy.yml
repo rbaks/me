@@ -25,6 +25,11 @@ jobs:
           npm i
           npm run build
           npm run export
+        env:
+          NEXT_APP_REVUE_API_KEY: ${{ secrets.NEXT_APP_REVUE_API_KEY }}
+          NEXT_APP_SPOTIFY_CLIENT_ID: ${{ secrets.NEXT_APP_SPOTIFY_CLIENT_ID }}
+          NEXT_APP_SPOTIFY_CLIENT_SECRET: ${{ secrets.NEXT_APP_SPOTIFY_CLIENT_SECRET }}
+          NEXT_APP_SPOTIFY_REFRESH_TOKEN: ${{ secrets.NEXT_APP_SPOTIFY_REFRESH_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
