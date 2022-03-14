@@ -7,7 +7,7 @@ export default async function handler(
   const result = await fetch('https://www.getrevue.co/api/v2/subscribers', {
     method: 'GET',
     headers: {
-      Authorization: `Token ${process.env.REVUE_API_KEY}`
+      Authorization: `Token ${process.env.NEXT_APP_REVUE_API_KEY}`
     }
   });
   console.log(`JSON return data = ${JSON.stringify(result)}`);
