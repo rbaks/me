@@ -5,7 +5,7 @@ export const siteMetadata = {
     headLine: 'Software developer and blogger',
     zingFactor:
       'Making a better world through code. Sharing knowledge by leveraging open source projects.',
-    image: '/avatar.jpg'
+    image: 'avatar.jpg'
   },
   social: {
     github: 'https://github.com/rbaks',

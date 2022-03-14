@@ -6,11 +6,7 @@ module.exports = withContentlayer()({
   reactStrictMode: true,
   assetPrefix: isProd ? "/andr.is-a.dev" : "",
   basePath: isProd ? "/andr.is-a.dev" : "",
-  images: {
-    domains: [
-      'i.scdn.co' // Spotify Album Art
-    ]
-  },
+
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
