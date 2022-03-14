@@ -38,20 +38,20 @@ export default function Container(props) {
 
   const { children, ...customMeta } = props;
   const router = useRouter();
-  const meta = {
-    title: `${siteMetadata.author.name} – website`,
-    description: `${siteMetadata.author.headLine}`,
-    image: `${siteMetadata.siteUrl}/static/images/banner.png`,
-    type: 'website',
-    ...customMeta
-  };
+  // const meta = {
+  //   title: `${siteMetadata.author.name} – website`,
+  //   description: `${siteMetadata.author.headLine}`,
+  //   image: `${siteMetadata.siteUrl}/static/images/banner.png`,
+  //   type: 'website',
+  //   ...customMeta
+  // };
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
       <Head>
-        <title>{siteMetadata.title}</title>
+        <title>{props.title}</title>
         <meta name="robots" content="follow, index" />
-        <meta content={siteMetadata.author.headLine} name="description" />
+        <meta content={props.description} name="description" />
         <meta
           property="og:url"
           content={`${siteMetadata.siteUrl}${router.asPath}`}
@@ -60,21 +60,18 @@ export default function Container(props) {
           rel="canonical"
           href={`${siteMetadata.siteUrl}${router.asPath}`}
         />
-        <meta property="og:type" content={meta.type} />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteMetadata.author.name} />
-        <meta
-          property="og:description"
-          content={siteMetadata.author.headLine}
-        />
+        <meta property="og:description" content={props.description} />
         <meta property="og:title" content={siteMetadata.title} />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:image" content={props.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@leeerob" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
+        <meta name="twitter:title" content={props.title} />
+        <meta name="twitter:description" content={props.description} />
+        <meta name="twitter:image" content={props.image} />
+        {props.date && (
+          <meta property="article:published_time" content={props.date} />
         )}
       </Head>
       <div className="flex flex-col justify-center px-8">
