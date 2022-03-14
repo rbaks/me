@@ -53,7 +53,10 @@ export default function About() {
           </ul>
           <h2>Bio</h2>
           <h3>Headline</h3>
-          <p>Andrianina Rabakoson, Software developer and blogger</p>
+          <p>
+            <strong>Andrianina Rabakoson</strong>, Software developer and
+            blogger
+          </p>
           <h3>Summary</h3>
           <p>
             Fresh graduate of a top-tier university focused on designing and
