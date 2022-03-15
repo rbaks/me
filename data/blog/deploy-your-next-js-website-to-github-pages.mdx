@@ -1,10 +1,10 @@
 ---
-title: 'Deploy your Next.js website to github pages'
+title: 'Deploy your Next.js website to Github Pages'
 publishedAt: '2022-03-15'
 summary: 'Work with Next.js as with Vercel, but without Vercel, but with Github pages, without Vercel'
 image: '/static/images/banner.png'
 featured: true
-draft: true
+draft: false
 ---
 
 The [2021 Stackoverflow developer survey](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe-prof) revealed the massive adoption of Meta's [React.js](https://reactjs.org/) open source library within the frontend industry.
@@ -103,21 +103,7 @@ Create a Next.js website with TypeScript (typescript is optional).
 $ npx create-next-app --typescript
 ```
 
-`cd` into your newly created Nextjs project and open with your editor. If you now run
-
-```bash
-$ npm run dev
-```
-
-and open your browser to [localhost:3000](http://localhost:3000/) (by default), your site will look like this.
-
-<ImageWithTheme
-  alt="Hello world"
-  src={`/static/images/Nextjs/helloworld.png`}
-  width={730}
-/>
-
-What a piece of art 🤩 !
+`cd` into your newly created Nextjs project and open with your editor.
 
 In your `package.json` file, add the export script into the `scripts` section.
 
@@ -208,14 +194,7 @@ $ git push -u origin main
 Have a look at the Actions tab in your Github repository to see the workflow running. What this action does is described in the `deploy.yml` file we just created and it will always fire up whenever you push to the `main` branch of your remote repository.
 
 Wait until all the jobs have been checked off. Now you have one extra branch `gh-pages` created by the workflow to host your static files from the `out/` folder.
-Go to your settings tabs and make sure you have your `gh-pages` branch selected for the github pages source.
-
-<ImageWithTheme
-  alt="Github Setting"
-  light={`/static/images/Nextjs/settingslight.png`}
-  dark={`/static/images/Nextjs/settingsdark.png`}
-  width={730}
-/>
+Go to **settings** > **pages** and make sure you have your `gh-pages` branch selected for the github pages source.
 
 If not, run your workflow again in the Actions tab. Now your site is deployed to Github pages and you can access it via `<your-github-username>.github.io/<your-repo-name>` and it looks ... horrible 🤣.
 
