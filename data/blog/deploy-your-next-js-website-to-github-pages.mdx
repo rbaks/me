@@ -1,7 +1,7 @@
 ---
-title: 'Migrate your Next.js website to github pages'
+title: 'Deploy your Next.js website to github pages'
 publishedAt: '2022-03-15'
-summary: 'Work with Next.js like with Vercel, but without Vercel'
+summary: 'Work with Next.js as with Vercel, but without Vercel, but with Github pages, without Vercel'
 image: '/static/images/banner.png'
 featured: true
 draft: false
@@ -10,7 +10,7 @@ draft: false
 The [2021 Stackoverflow developer survey](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe-prof) revealed the massive adoption of Meta's [React.js](https://reactjs.org/) open source library within the frontend industry.
 
 <Image
-  alt="cantor pairing function graph"
+  alt="Stackoverflow developer survey"
   src={`/static/images/Nextjs/React-developer-survey.png`}
   width={730}
 />
@@ -61,18 +61,14 @@ Nevertheless, there is no such thing as perfection. It is recommended to only us
 
 ## Table of Contents
 
-- [Prerequisites](/blog/migrate-your-next-js-website-to-github-pages#prerequisites)
-- [Project setup](/blog/migrate-your-next-js-website-to-github-pages#project-setup)
-- [Continuous integration](/blog/migrate-your-next-js-website-to-github-pages#continuous-integration)
-- [Fixing links](/blog/migrate-your-next-js-website-to-github-pages#fixing-links)
-- [The public folder](/blog/migrate-your-next-js-website-to-github-pages#the-public-folder)
-- [Environment variables](/blog/migrate-your-next-js-website-to-github-pages#environment-variables)
-- [Solution](/blog/migrate-your-next-js-website-to-github-pages#solution)
-  - [Two databases](/blog/migrate-your-next-js-website-to-github-pages#two-databases)
-  - [The broader case](/blog/migrate-your-next-js-website-to-github-pages#the-broader-case)
-- [Result](/blog/migrate-your-next-js-website-to-github-pages#result)
-- [Conclusion](/blog/migrate-your-next-js-website-to-github-pages#conclusion)
-- [References](/blog/migrate-your-next-js-website-to-github-pages#references)
+- [Prerequisites](/blog/deploy-your-next-js-website-to-github-pages#prerequisites)
+- [Project setup](/blog/deploy-your-next-js-website-to-github-pages#project-setup)
+- [Continuous integration](/blog/deploy-your-next-js-website-to-github-pages#continuous-integration)
+- [Fixing links](/blog/deploy-your-next-js-website-to-github-pages#fixing-links)
+- [The public folder](/blog/deploy-your-next-js-website-to-github-pages#the-public-folder)
+- [Environment variables](/blog/deploy-your-next-js-website-to-github-pages#environment-variables)
+- [Image Optimization](/blog/deploy-your-next-js-website-to-github-pages#image-optimization)
+- [Conclusion](/blog/deploy-your-next-js-website-to-github-pages#conclusion)
 
 ## Prerequisites
 
@@ -101,13 +97,27 @@ $ git --version
 
 ## Project setup
 
-Create a Next.js website with TypeScript (typescript optional).
+Create a Next.js website with TypeScript (typescript is optional).
 
 ```bash
 $ npx create-next-app --typescript
 ```
 
-`cd` into your newly created Nextjs project and open with your editor.
+`cd` into your newly created Nextjs project and open with your editor. If you now run
+
+```bash
+$ npm run dev
+```
+
+and open your browser to [localhost:3000](http://localhost:3000/) (by default), your site will look like this.
+
+<ImageWithTheme
+  alt="Welcome page"
+  src={`/static/images/Nextjs/welcome.png`}
+  width={730}
+/>
+
+What a piece of art 🤩 !
 
 In your `package.json` file, add the export script into the `scripts` section.
 
@@ -201,7 +211,7 @@ Wait until all the jobs have been checked off. Now you have one extra branch `gh
 Go to your settings tabs and make sure you have your `gh-pages` branch selected for the github pages source.
 
 <ImageWithTheme
-  alt="cantor pairing function graph"
+  alt="Github Pages setting"
   light={`/static/images/Nextjs/gh-pages-setting-light.png`}
   dark={`/static/images/Nextjs/gh-pages-setting-dark.png`}
   width={730}
@@ -210,7 +220,7 @@ Go to your settings tabs and make sure you have your `gh-pages` branch selected 
 If not, run your workflow again in the Actions tab. Now your site is deployed to Github pages and you can access it via `<your-github-username>.github.io/<your-repo-name>` and it looks ... horrible 🤣.
 
 <Image
-  alt="cantor pairing function graph"
+  alt="Site malconfigured"
   src={`/static/images/Nextjs/site-not-conf.png`}
   width={730}
 />
@@ -330,4 +340,32 @@ export default Image;
 
 ## Image optimization
 
-Now that all of our images display correctly across the entire website,
+Now that all of our images display correctly across the entire website and environment variables saved us from sleepless nights of production debugging, it is time to tackle image optimization because Nextjs automatically optimizes them at runtime with Vercel so we should mimic the same functionality.
+
+Run the following command to install [`next-optimized-image`](https://github.com/cyrilwanner/next-optimized-images) package.
+
+```bash
+$ npm install next-optimized-images
+```
+
+Enable the plugin in your `next.config.js` file:
+
+```diff
++ const withPlugins = require('next-compose-plugins');
++ const optimizedImages = require('next-optimized-images');
+
++ module.exports = withPlugins([
++  [optimizedImages, {
++    /* config for next-optimized-images */
++  }],
+   reactStrictMode: true,
+   assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '',
+   assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
++]);
+```
+
+You can see the [configuration Section](https://github.com/cyrilwanner/next-optimized-images#configuration) of `next-optimized-images` for all available config options.
+
+## Conclusion
+
+Deploying your Next app to GitHub Pages is not the most intuitive way of doing it, and by far. Vercel would offer the _one click_ deploy option every normal people would use but I don't write articles for normal people :). Nonetheless, taking this challenge taught us some really important aspect of software develoment, that is, mastering CI workflows a bit and factoring our code to prevent bugs (but not switching to dark mode :)). I hope this article helped his readers a lot and please do not hesitate to create an issue or make pull requests on this article, I would be delighted for your contributions.
