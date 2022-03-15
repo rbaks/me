@@ -1,5 +1,6 @@
 export const siteMetadata = {
   title: 'Andrianina Rabakoson – Developer, blogger',
+  description: 'Personal portfolio website and blog',
   author: {
     name: 'Andrianina Rabakoson',
     headLine: 'Software developer and blogger',

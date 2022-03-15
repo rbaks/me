@@ -83,7 +83,7 @@ export default function About() {
             Responsible for designing and developing an automated database
             migration command line tool for Moodle websites. Helped streamline
             the migration process to avoid costly and time consuming
-            verifications. Documented and tested the tool fir use in the
+            verifications. Documented and tested the tool for use in the
             company.
           </p>
           <h3>Award</h3>
@@ -113,7 +113,7 @@ export default function About() {
             </li>
             <li>
               <strong>Operating systems :</strong> Fedora 35, Arch Linux,
-              Windowse
+              Windows
             </li>
           </ul>
           <h3>Areas of interest</h3>
