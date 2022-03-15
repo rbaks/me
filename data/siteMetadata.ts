@@ -18,7 +18,7 @@ export const siteMetadata = {
   siteUrl: 'https://andr.is-a.dev/me',
   siteRepo: 'https://github.com/rbaks/me',
   siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/image-card.png',
+  socialBanner: '/static/images/banner.png',
   email: 'rabakoson@protonmail.com',
   locale: 'en-US',
   analytics: {
