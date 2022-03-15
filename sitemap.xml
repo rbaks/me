@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rbaks.github.io/andr.is-a.dev/about</loc>
+    <loc>https://andr.is-a.dev/me/about</loc>
   </url>
 
   <url>
-    <loc>https://rbaks.github.io/andr.is-a.dev/blog</loc>
+    <loc>https://andr.is-a.dev/me/blog</loc>
   </url>
 
   <url>
-    <loc>https://rbaks.github.io/andr.is-a.dev</loc>
+    <loc>https://andr.is-a.dev/me</loc>
   </url>
 
   <url>
-    <loc>https://rbaks.github.io/andr.is-a.dev/projects</loc>
+    <loc>https://andr.is-a.dev/me/projects</loc>
   </url>
 
   <url>
     <loc
-      >https://rbaks.github.io/andr.is-a.dev/blog/bijective-functions-applied-to-database-operations</loc
+      >https://andr.is-a.dev/me/blog/bijective-functions-applied-to-database-operations</loc
     >
   </url>
 
   <url>
     <loc
-      >https://rbaks.github.io/andr.is-a.dev/blog/deploy-your-next-js-website-to-github-</loc
+      >https://andr.is-a.dev/me/blog/deploy-your-next-js-website-to-github-</loc
     >
   </url>
 
   <url>
     <loc
-      >https://rbaks.github.io/andr.is-a.dev/blog/which-back-end-should-i-use-as-a-front-end-developer</loc
+      >https://andr.is-a.dev/me/blog/which-back-end-should-i-use-as-a-front-end-developer</loc
     >
   </url>
 </urlset>

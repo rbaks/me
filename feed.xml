@@ -2,29 +2,29 @@
     <channel>
         <title><![CDATA[Andrianina Rabakoson]]></title>
         <description><![CDATA[Andrianina Rabakoson]]></description>
-        <link>https://rbaks.github.io/andr.is-a.dev</link>
+        <link>https://andr.is-a.dev/me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 15 Mar 2022 15:07:54 GMT</lastBuildDate>
-        <atom:link href="https://rbaks.github.io/andr.is-a.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 15 Mar 2022 15:18:44 GMT</lastBuildDate>
+        <atom:link href="https://andr.is-a.dev/me/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Bijective functions applied to database operations]]></title>
             <description><![CDATA[Do we need maths for software development? Dive into how Cantor functions got me my Software engineering degree.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/bijective-functions-applied-to-database-operations</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/bijective-functions-applied-to-database-operations</guid>
+            <link>https://andr.is-a.dev/me/blog/bijective-functions-applied-to-database-operations</link>
+            <guid isPermaLink="true">https://andr.is-a.dev/me/blog/bijective-functions-applied-to-database-operations</guid>
             <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Deploy your Next.js website to github pages]]></title>
             <description><![CDATA[Work with Next.js as with Vercel, but without Vercel, but with Github pages, without Vercel]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/deploy-your-next-js-website-to-github-pages</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/deploy-your-next-js-website-to-github-pages</guid>
+            <link>https://andr.is-a.dev/me/blog/deploy-your-next-js-website-to-github-pages</link>
+            <guid isPermaLink="true">https://andr.is-a.dev/me/blog/deploy-your-next-js-website-to-github-pages</guid>
             <pubDate>Tue, 15 Mar 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Which Back End Should I Use As A Front-End Developer?]]></title>
             <description><![CDATA[Choosing a service to store data can be confusing and overwhelming for a front-end developer. This comprehensive guide is a choose your own adventure dive into creating your backend.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/which-back-end-should-i-use-as-a-front-end-developer</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/which-back-end-should-i-use-as-a-front-end-developer</guid>
+            <link>https://andr.is-a.dev/me/blog/which-back-end-should-i-use-as-a-front-end-developer</link>
+            <guid isPermaLink="true">https://andr.is-a.dev/me/blog/which-back-end-should-i-use-as-a-front-end-developer</guid>
             <pubDate>Sun, 09 Aug 2020 00:00:00 GMT</pubDate>
         </item>
     </channel>
