@@ -4,43 +4,8 @@
         <description><![CDATA[Andrianina Rabakoson]]></description>
         <link>https://rbaks.github.io/andr.is-a.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 14 Mar 2022 20:50:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Mar 2022 13:45:39 GMT</lastBuildDate>
         <atom:link href="https://rbaks.github.io/andr.is-a.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <item>
-            <title><![CDATA[2019 Year in Review]]></title>
-            <description><![CDATA[Highlights and reflections on 2019 and a look forward to 2020.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/2019</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/2019</guid>
-            <pubDate>Thu, 26 Dec 2019 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Analyzing 10+ Years of My Facebook Data]]></title>
-            <description><![CDATA[Which year was I the most active? Who has commented on my pictures the most? How many songs have I streamed?]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/analyzing-10-years-of-facebook-data</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/analyzing-10-years-of-facebook-data</guid>
-            <pubDate>Wed, 04 Apr 2018 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Beginner’s Guide to the Programming Portfolio]]></title>
-            <description><![CDATA[Learn how to create your programming portfolio from the ground up, including tips and tricks I learned building my own.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/beginners-guide-to-the-programming-portfolio</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/beginners-guide-to-the-programming-portfolio</guid>
-            <pubDate>Fri, 24 Feb 2017 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Benefits I Care About in 2019]]></title>
-            <description><![CDATA[Should you care about game rooms and beer on tap? How important is working remotely and a flexible schedule? I give my take on what benefits are important to me in 2019.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/benefits-i-care-about-in-2019</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/benefits-i-care-about-in-2019</guid>
-            <pubDate>Sat, 09 Feb 2019 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The 10 Best Bars in Des Moines]]></title>
-            <description><![CDATA[Using data to determine where to drink.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/best-bars-in-des-moines</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/best-bars-in-des-moines</guid>
-            <pubDate>Sun, 13 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Bijective functions applied to database operations]]></title>
             <description><![CDATA[Do we need maths for software development? Dive into how Cantor functions got me my Software engineering degree.]]></description>
@@ -49,25 +14,11 @@
             <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Build vs. Buy]]></title>
-            <description><![CDATA[What decisions go into evaluating software solutions?]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/build-vs-buy</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/build-vs-buy</guid>
-            <pubDate>Tue, 25 Sep 2018 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Building My First Electron App]]></title>
-            <description><![CDATA[Learn how I created a simple application to convert and download YouTube videos as MP3s.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/building-my-first-electron-app</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/building-my-first-electron-app</guid>
-            <pubDate>Sun, 29 Oct 2017 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Calibrate San Francisco]]></title>
-            <description><![CDATA[What I learned from this engineering management conference.]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/calibrate-san-francisco</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/calibrate-san-francisco</guid>
-            <pubDate>Mon, 02 Oct 2017 00:00:00 GMT</pubDate>
+            <title><![CDATA[Migrate your Next.js website to github pages]]></title>
+            <description><![CDATA[Work with Next.js like with Vercel, but without Vercel]]></description>
+            <link>https://rbaks.github.io/andr.is-a.dev/blog/migrate-your-next-js-website-to-github-pages</link>
+            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/migrate-your-next-js-website-to-github-pages</guid>
+            <pubDate>Tue, 15 Mar 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Which Back End Should I Use As A Front-End Developer?]]></title>
