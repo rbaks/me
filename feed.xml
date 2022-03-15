@@ -4,7 +4,7 @@
         <description><![CDATA[Andrianina Rabakoson]]></description>
         <link>https://rbaks.github.io/andr.is-a.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 15 Mar 2022 14:26:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Mar 2022 14:40:01 GMT</lastBuildDate>
         <atom:link href="https://rbaks.github.io/andr.is-a.dev/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Bijective functions applied to database operations]]></title>
@@ -14,10 +14,10 @@
             <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Migrate your Next.js website to github pages]]></title>
-            <description><![CDATA[Work with Next.js like with Vercel, but without Vercel]]></description>
-            <link>https://rbaks.github.io/andr.is-a.dev/blog/migrate-your-next-js-website-to-github-pages</link>
-            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/migrate-your-next-js-website-to-github-pages</guid>
+            <title><![CDATA[Deploy your Next.js website to github pages]]></title>
+            <description><![CDATA[Work with Next.js as with Vercel, but without Vercel, but with Github pages, without Vercel]]></description>
+            <link>https://rbaks.github.io/andr.is-a.dev/blog/deploy-your-next-js-website-to-github-pages</link>
+            <guid isPermaLink="true">https://rbaks.github.io/andr.is-a.dev/blog/deploy-your-next-js-website-to-github-pages</guid>
             <pubDate>Tue, 15 Mar 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
