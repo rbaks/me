@@ -10,7 +10,7 @@ export const projects = [
     title: 'andr.is-a.dev',
     description:
       'My personal portfolio website, blog and home in the world wide web.',
-    url: 'http://andr.is-a.dev ',
+    url: 'http://andr.is-a.dev/me ',
     icon: 'portfolio'
   }
   // {

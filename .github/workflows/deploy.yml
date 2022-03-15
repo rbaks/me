@@ -30,7 +30,7 @@ jobs:
           REACT_APP_SPOTIFY_CLIENT_ID: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_ID }}
           REACT_APP_SPOTIFY_CLIENT_SECRET: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_SECRET }}
           REACT_APP_SPOTIFY_REFRESH_TOKEN: ${{ secrets.REACT_APP_SPOTIFY_REFRESH_TOKEN }}
-          NEXT_PUBLIC_BASE_PATH: /andr.is-a.dev
+          NEXT_PUBLIC_BASE_PATH: /me
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
