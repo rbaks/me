@@ -55,7 +55,7 @@ export default function About() {
           <h3>Headline</h3>
           <p>
             <strong>Andrianina Rabakoson</strong>, Software developer and
-            blogger
+            content creator
           </p>
           <h3>Summary</h3>
           <p>
