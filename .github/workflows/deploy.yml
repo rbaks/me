@@ -26,11 +26,8 @@ jobs:
           npm run build
           npm run export
         env:
-          REACT_APP_REVUE_API_KEY: ${{ secrets.REACT_APP_REVUE_API_KEY }}
-          REACT_APP_SPOTIFY_CLIENT_ID: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_ID }}
-          REACT_APP_SPOTIFY_CLIENT_SECRET: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_SECRET }}
-          REACT_APP_SPOTIFY_REFRESH_TOKEN: ${{ secrets.REACT_APP_SPOTIFY_REFRESH_TOKEN }}
           NEXT_PUBLIC_BASE_PATH: /me
+          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

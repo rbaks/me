@@ -27,22 +27,6 @@ export default function Document(props) {
         />
         <meta content="#ffffff" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-VNRYSRDQBB"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VNRYSRDQBB', {
-              page_path: window.location.pathname,
-            });
-          `
-          }}
-        />
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
         <Main />
