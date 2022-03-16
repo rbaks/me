@@ -94,8 +94,8 @@ export default function About() {
             Successfully shipped an image search engine for endemic species of
             Madagascar, showing dependency graphs in the process to better
             illustrate biodiversity. Participated in a team of five to create a
-            Facebook Messenger chatbot interace for the search engine as well as
-            the image recognition system.
+            Facebook Messenger chatbot interface for the search engine as well
+            as the image recognition system.
           </p>
           <h3>Skills</h3>
           <ul>
