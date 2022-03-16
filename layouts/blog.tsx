@@ -2,14 +2,16 @@ import Image from '../components/Image';
 import { parseISO, format } from 'date-fns';
 
 import Container from 'components/Container';
-import Subscribe from 'components/Subscribe';
+// import Subscribe from 'components/Subscribe';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
 import { siteMetadata } from 'data/siteMetadata';
 import Giscus from 'components/comments/Giscus';
+import ShareButtons from 'components/share/ShareButtons';
 
 const editUrl = (slug) =>
   `${siteMetadata.siteRepo}/edit/main/data/blog/${slug}.mdx`;
+const articleUrl = (slug) => `${siteMetadata.siteUrl}/blog/${slug}`;
 
 export default function BlogLayout({
   children,
@@ -49,14 +51,19 @@ export default function BlogLayout({
           {children}
         </div>
         <div className="mt-8"></div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={editUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit this page on GitHub'}
-          </a>
+        <div className="flex flex-row place-content-between w-full">
+          <div className="text-sm text-gray-700 dark:text-gray-300">
+            <a
+              href={editUrl(post.slug)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {'Edit this page on GitHub'}
+            </a>
+          </div>
+          <div>
+            <ShareButtons size={30} shareUrl={articleUrl(post.slug)} />
+          </div>
         </div>
         <Giscus />
       </article>
