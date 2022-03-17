@@ -2,16 +2,16 @@
 title: 'Create your own Cryptocurrency, it is easier than you might think'
 publishedAt: '2022-03-17'
 summary: 'Have a solid grasp on what Cryptocurrencies are and walk through the steps of creating your own token on the Ethereum blockchain'
-image: '/static/images/banner.png'
+image: '/static/images/Cryptocurrencies/banner.png'
 featured: true
 draft: false
 ---
 
 Cryptocurrency is one of the words you can’t avoid these days. It is still at its very early stage and you might think it's an overhyped trend that will fade in a few years, but that is also what people thought about the internet in the mid-90s. The question is : why people are so enthusiastic about it?
 
-In this article, you will have a solid grasp on what Cryptocurrencies are, why do they matter, how do they work and even create your own cryptocurrency in the Ethereum blockchain.
+In this article, you will have a solid grasp on what cryptocurrencies are, why do they matter, how do they work and even create your own cryptocurrency in the Ethereum blockchain.
 
-> Disclaimer !!! **this is not a financial advice but rather for educational purposes only**. I do not incite the reader to buy the cryptocurrency we're about to create. The reader should make further researches if he or she wants to invest real money in cryptocurrencies.
+> **Disclaimer !!!** this is not a financial advice but rather for educational purposes only. I do not incite the reader to buy the cryptocurrency we're about to create. The reader should make further researches before he or she invests real money in cryptocurrencies.
 
 ## Table of Contents
 
@@ -29,6 +29,7 @@ In this article, you will have a solid grasp on what Cryptocurrencies are, why d
   - [Mainnet vs Testnet](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#mainnet-vs-testnet)
   - [Rinkeby faucet](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#rinkeby-faucet)
   - [Deploying the token](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#deploying-the-token)
+- [Conclusion](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#conclusion)
 
 ## Prerequisites
 
@@ -49,11 +50,11 @@ Now you may ask, all of this is cool but how do we even create those crypto thin
 
 Well, a blockchain is, in itself, its own currency zone. Like many countries, there are many blockchains _(differentiated by the software they run)_ with their own native currency. The [Bitcoin](https://bitcoin.org/en/) blockchain for instance uses Bitcoin as the main currency, while Ether is the [Ethereum](https://ethereum.org/en/) blockchain's main currency. As per the grocery store example, we simply want to create our own currency that has value compared to the government's, not move to an island and build our own government and country. That is what differentiates **cryptocurrency coins** from **cryptocurrency tokens**.
 
-Cryptocurrency coins are made by creating a brand new blockchain or by forking an existing one _(copying an existing blockchain software and making customizations)_. It is comparable to creating a new currency zone. These are native currencies like Bitcoin and Ether. At the time of this writing, one Ether is worth $2,774 like any other exchange rates between currencies. Cryptocurrency tokens on the other hand are currencies built on existing blockchain protocols that has value compared to their native currency _(which are a perfect match for our grocery store)_. These are currencies such as [DAI](<https://en.wikipedia.org/wiki/Dai_(cryptocurrency)>) and [UNI](https://uniswap.org/blog/uni) which are tokens on the Ethereum blockchain. At the time of this writing, a DAI is worth 0.000358 Ether, which brings to the respective amount of dollars. This is however a very general comparison between the two but it can cause a major headache if frequently overlooked.
+Cryptocurrency coins are made by creating a brand new blockchain or by forking an existing one _(copying an existing blockchain software and making customizations)_. It is comparable to creating a new currency zone. These are native currencies like Bitcoin and Ether. At the time of this writing, one Ether is worth $2,774 like any other exchange rates between currencies. Cryptocurrency tokens on the other hand are currencies built on existing blockchain protocols that has value compared to their native currency _(which are a perfect match for our grocery store)_. These are currencies such as [DAI](<https://en.wikipedia.org/wiki/Dai_(cryptocurrency)>) and [UNI](https://uniswap.org/blog/uni) which are tokens on the Ethereum blockchain. At the time of this writing, a DAI is worth 0.000358 Ether, which brings to the respective amount of US dollars. This is however a very general comparison between the two but it can cause a major headache if frequently overlooked.
 
 ## Demand and Supply
 
-The value of these cryptocurrencies comes from the duality of **demand** and **supply**. If our grocery store were to sell the only covid vaccines in the world and only with our cryptocurrency token, our token would automatically gain value due to more people buying it _(exchanging it for dollars)_ to be vaccinated, this is demand. The price of our token would automatically rise if we burn _(destroy)_ a good amount of it to a fewer number than people wanting to buy, making our token worth thousands of dollars, and conversely, it will only be kept back low if we mint _(create)_ more of our token than there would be people willing to buy it, this is supply.
+The value of these cryptocurrencies comes from the duality of **demand** and **supply**. If our grocery store were to sell the only covid vaccines in the world and only with our cryptocurrency token, our token would automatically gain value due to more people buying it _(exchanging it for US dollars)_ to be vaccinated, this is demand. The price of our token would automatically rise if we burn _(destroy)_ a good amount of it to a fewer number than people wanting to buy, making our token worth thousands of dollars, and conversely, it will only be kept back low if we mint _(create)_ more of our token than there would be people willing to buy it, this is supply.
 
 If something has to be clear, is that yes, cryptocurrency coins are difficult to create but tokens aren't.
 
@@ -69,7 +70,7 @@ Under the hood, every token are just code deployed to the blockchain, they are k
 
 Now that we know our token will follow the ERC-20 standard, we have to get an **ERC-20 token wallet** to manage our wealth _(sending, receiving and storing our erc20 tokens)_. Notice, however, that you'll have the feeling of storing your tokens in your wallet. Though, if you enter into the technical things, your tokens are just an accountability of all of your transactions on the blockchain. You do not really own your tokens but just the [private key](https://www.investopedia.com/terms/p/private-key.asp#:~:text=A%20private%20key%20is%20a,ownership%20of%20a%20blockchain%20address.).
 
-The most popular ERC-20 wallet on the circulation is [Metamask](https://metamask.io/). Go to their website and install the extension for your browser. After the installation, follow the instruction to create your metamask account and you should end up with the following :
+The most popular ERC-20 wallet on the circulation is [Metamask](https://metamask.io/). Go to their website and install the extension for your browser. After the installation, follow the instruction to create your metamask account and you should end up with the following fresh account :
 
 <Image
   alt="Metamask"
@@ -89,7 +90,7 @@ Now that you have Metamask installed, head over to the [OpenZeppelin Contracts W
 
 ### Remix editor
 
-Just right above the wizard, click the `Open in Remix` button. I will open a tab for the Remix IDE containing our code. Don't panic, this is just a tool to facilitate our task of deploying our token to the blockchain.
+Just right above the wizard, click the `Open in Remix` button. It will open a tab for the Remix IDE containing our code. Don't panic, this is just a tool to facilitate our task of deploying our token to the blockchain.
 
 Head over the `Solidity compiler` tab of the IDE and click on the `Compile contract` button. Compilation is just a fancy word for translation. It translates our human readable code of the token to machine language that a computer can understand, Ethereum in our case. Leave everything as default and after your compilation is successful _(green checkmark on the compile tab)_, go to the last `Deploy & run transactions` tabs. Switch the environment option to `injected web3`, it will open you metamask wallet and ask you to connect from it. Click `Next` and `Connect`.
 
@@ -111,7 +112,7 @@ Then it's up to the person making the transaction to value a unit of gas to what
 
 Notice, however, that validators are incentivized to first pick the transactions they can benefit the most, so if you want your transaction to settle quick, you should bump your fees and if you can't afford much on fees, your transaction may end up pending all nights.
 
-When the network is congested, fees are high. [Here](https://ethgasstation.info/) is a website where you can have a glimpse on how much fee to place for a certain transaction duration at the moment.
+When the network is congested, fees are high. [Here](https://ethgasstation.info/) is a website where you can have a glimpse of how much fee to place for a certain transaction duration at the moment.
 
 ### Mainnet vs Testnet
 
@@ -129,7 +130,7 @@ Head over to your Metamask wallet and make it point to the rinkeby testnet. In t
 
 ### Rinkeby faucet
 
-Testnets work exactly the same as the mainnet, we should then always have some fake Ether to deploy our token to the testnet. You can claim some in the [Rinkeby faucet](https://faucets.chain.link/rinkeby) page on Chainlink. Go to the website, on the upper right click the `Connect wallet` button, make sure you have the Rinkeby testnet selected on `Network`, send request and now wait for your transaction to complete.
+Testnets work exactly the same as the mainnet, we should then always have some test Ether to deploy our token to the testnet. You can claim some in the [Rinkeby faucet](https://faucets.chain.link/rinkeby) page on Chainlink. Go to the website, on the upper right click the `Connect wallet` button, make sure you have the Rinkeby testnet selected on `Network`, send request and now wait for your transaction to complete.
 
 <Image
   alt="Rinkeby faucet"
@@ -137,7 +138,7 @@ Testnets work exactly the same as the mainnet, we should then always have some f
   width={730}
 />
 
-Once your transaction is complete, you can open you Metamask wallet and see 0.1 ETH in it. Click the transaction under `Assets` tab and in `Receive` click `View on block explorer`.
+Once your transaction is complete, you can open you Metamask wallet and see your hard-earned 0.1 test Ether in it. Click the transaction under `Assets` tab and in `Receive` click `View on block explorer`.
 
 <Image
   alt="View on block explorer"
@@ -188,3 +189,7 @@ You can also go to the Remix IDE and in `deployed contract` we can easily perfor
   src={`/static/images/Cryptocurrencies/mintersonly.png`}
   width={730}
 />
+
+## Conclusion
+
+You can see from this article that creating cryptocurrencies can be done from a click of a button. Understanding at every level how they work is the thoughest task overall. Nevertheless, this article was a compilation of loads of information about this game changing but least understood innovation of our century. As always, this is not a financial advice at all. Creating tokens are for elaborated fintech companies that has experts and lots of engineers in their disposition. I hope the reader have learned a lot from this article. This entire blog is open source. It is always appreciated if you make contributions by creating pull requests, writing comments sharing posts to social media or even just leaving reactions below. I see you on the next.
