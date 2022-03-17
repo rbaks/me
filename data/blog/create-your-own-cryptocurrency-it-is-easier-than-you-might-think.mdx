@@ -1,0 +1,190 @@
+---
+title: 'Create your own Cryptocurrency, it is easier than you might think'
+publishedAt: '2022-03-17'
+summary: 'Have a solid grasp on what Cryptocurrencies are and walk through the steps of creating your own token on the Ethereum blockchain'
+image: '/static/images/banner.png'
+featured: true
+draft: false
+---
+
+Cryptocurrency is one of the words you can’t avoid these days. It is still at its very early stage and you might think it's an overhyped trend that will fade in a few years, but that is also what people thought about the internet in the mid-90s. The question is : why people are so enthusiastic about it?
+
+In this article, you will have a solid grasp on what Cryptocurrencies are, why do they matter, how do they work and even create your own cryptocurrency in the Ethereum blockchain.
+
+> Disclaimer !!! **this is not a financial advice but rather for educational purposes only**. I do not incite the reader to buy the cryptocurrency we're about to create. The reader should make further researches if he or she wants to invest real money in cryptocurrencies.
+
+## Table of Contents
+
+- [Prerequisites](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#prerequisites)
+- [The truth about our financial system](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#the-truth-about-our-financial-system)
+- [Cryptocurrencies to the rescue](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#cryptocurrencies-to-the-rescue)
+- [Coins vs Tokens](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#coins-vs-tokens)
+- [Demand and Supply](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#demand-and-supply)
+- [Create your own token](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#create-your-own-token)
+  - [ERC-20 Token standard](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#erc-20-token-standard)
+  - [ERC-20 Wallet](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#erc-20-wallet)
+  - [Contracts Wizard](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#contracts-wizard)
+  - [Remix editor](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#remix-editor)
+  - [Transaction gas and fees](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#transaction-gas-and-fees)
+  - [Mainnet vs Testnet](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#mainnet-vs-testnet)
+  - [Rinkeby faucet](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#rinkeby-faucet)
+  - [Deploying the token](/blog/create-your-own-cryptocurrency-it-is-easier-than-you-might-think#deploying-the-token)
+
+## Prerequisites
+
+No technical nor financial background is required in order to follow along. Explanations are beginner friendly, but a bit of understanding of how money works would be very helpfull.
+
+## The truth about our financial system
+
+People kept trying to create their own little market environment to grow their business. Let's say we run a grocery store, we want to create our own means of purchase _(our own currency)_ to lock-in our customers from competitors.
+However, doing so is illegal, at least in the countries that I know exist. You can’t exchange goods and services for currencies other than Euro in the Eurozone, they would even sue you for creating a so called _"fake money"_. This is because you are part of a large financial system that is centralized and controlled by your government. Even private banks cannot settle transactions with each other without the government's central bank money which is pointed to be the only legal currency in the country. Our store would then introduce harmless versions of currencies such as gift cards and fidelity points to avoid sinking our boats in the sea.
+
+## Cryptocurrencies to the rescue
+
+Although currency is just a fancy word for _"medium of exchange"_, it's hilarious that you're not allowed to create your own. Here's where cryptocurrency comes into play. As opposed to the centralized nature of our current financial system, cryptocurrencies aren't, by any means, controlled by banks or government. They run on a network of decentralized computers made for the people, by the people. This array of computers, as widely known as the [blockchain](https://en.wikipedia.org/wiki/Blockchain), runs some specific software to do cryptographical calculations _(hence the word crypto)_ that process and validate millions of transactions without the intervention of a middle-man _(like banks)_ whatsoever. Transactions in the blockchain are transparent, predictable, [pseudo-anonymous](https://www.eae.es/en/news/eae-news/blockchain-not-anonymous-system-it-pseudo-anonymous-andrei-boar), fast _(from 15 minutes to milliseconds)_, extremely secured _(nearly impossible to hack)_ and trustless, which means you don't have to think about whether or not to trust the network because everything there happens as it should be. This is however a complex mathematical property that the blockchain uses and we won't explain here but it's something you can further investigate if you're interrested in this concept with this [very good video explanation from Anders Brownworth](https://www.youtube.com/watch?v=_160oMzblY8) which I highly recommend you watch. Cryptocurrencies are then the money that runs the blockchain, a new and digital form of a financial system for the people.
+
+Now you may ask, all of this is cool but how do we even create those crypto things? I am not a computer person, how can you even say it's easy?
+
+## Coins vs Tokens
+
+Well, a blockchain is, in itself, its own currency zone. Like many countries, there are many blockchains _(differentiated by the software they run)_ with their own native currency. The [Bitcoin](https://bitcoin.org/en/) blockchain for instance uses Bitcoin as the main currency, while Ether is the [Ethereum](https://ethereum.org/en/) blockchain's main currency. As per the grocery store example, we simply want to create our own currency that has value compared to the government's, not move to an island and build our own government and country. That is what differentiates **cryptocurrency coins** from **cryptocurrency tokens**.
+
+Cryptocurrency coins are made by creating a brand new blockchain or by forking an existing one _(copying an existing blockchain software and making customizations)_. It is comparable to creating a new currency zone. These are native currencies like Bitcoin and Ether. At the time of this writing, one Ether is worth $2,774 like any other exchange rates between currencies. Cryptocurrency tokens on the other hand are currencies built on existing blockchain protocols that has value compared to their native currency _(which are a perfect match for our grocery store)_. These are currencies such as [DAI](<https://en.wikipedia.org/wiki/Dai_(cryptocurrency)>) and [UNI](https://uniswap.org/blog/uni) which are tokens on the Ethereum blockchain. At the time of this writing, a DAI is worth 0.000358 Ether, which brings to the respective amount of dollars. This is however a very general comparison between the two but it can cause a major headache if frequently overlooked.
+
+## Demand and Supply
+
+The value of these cryptocurrencies comes from the duality of **demand** and **supply**. If our grocery store were to sell the only covid vaccines in the world and only with our cryptocurrency token, our token would automatically gain value due to more people buying it _(exchanging it for dollars)_ to be vaccinated, this is demand. The price of our token would automatically rise if we burn _(destroy)_ a good amount of it to a fewer number than people wanting to buy, making our token worth thousands of dollars, and conversely, it will only be kept back low if we mint _(create)_ more of our token than there would be people willing to buy it, this is supply.
+
+If something has to be clear, is that yes, cryptocurrency coins are difficult to create but tokens aren't.
+
+## Create your own token
+
+Now is the fun part, we want to create our own token which we name CVO _(just to sound like covid 😉)_ . It will be the token people will buy vaccines with and make us millionaires 🤑. We will create the CVO token whithin the Ethereum blockchain protocol which is the second most valuable blockchain platform behind bitcoin by [market capitalization](https://coinmarketcap.com/) _(The total market value of a cryptocurrency's circulating supply)_.
+
+### ERC-20 Token standard
+
+Under the hood, every token are just code deployed to the blockchain, they are known as [smart contracts](https://en.wikipedia.org/wiki/Smart_contract). With Ethereum, we can make our smart contracts do whatever we like because they are [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness). However, we just want our token to be purchased by our customers, exchanged between them, minted and burned. Thankfully, some smart guys from [OpenZeppelin](https://openzeppelin.com/) designed standards to follow for a number of token use cases. In particular, we are interested in the [ERC-20 token standard](https://docs.openzeppelin.com/contracts/4.x/erc20), which best suits our CVO token.
+
+### ERC-20 Wallet
+
+Now that we know our token will follow the ERC-20 standard, we have to get an **ERC-20 token wallet** to manage our wealth _(sending, receiving and storing our erc20 tokens)_. Notice, however, that you'll have the feeling of storing your tokens in your wallet. Though, if you enter into the technical things, your tokens are just an accountability of all of your transactions on the blockchain. You do not really own your tokens but just the [private key](https://www.investopedia.com/terms/p/private-key.asp#:~:text=A%20private%20key%20is%20a,ownership%20of%20a%20blockchain%20address.).
+
+The most popular ERC-20 wallet on the circulation is [Metamask](https://metamask.io/). Go to their website and install the extension for your browser. After the installation, follow the instruction to create your metamask account and you should end up with the following :
+
+<Image
+  alt="Metamask"
+  src={`/static/images/Cryptocurrencies/metamask.png`}
+  width={730}
+/>
+
+### Contracts Wizard
+
+Now that you have Metamask installed, head over to the [OpenZeppelin Contracts Wizard page](https://docs.openzeppelin.com/contracts/4.x/wizard). This wizard creates the code for our token from a graphical interface. In the ERC-20 section selected, enter the name of our token _(which will be the same as the symbol)_, enter the `premint` value _(the initial amount of tokens when we first deploy it to the blockchain)_. In the Feature section, check `Mintable` _(Privileged accounts will be able to create more supply)_, `Burnable` _(Token holders will be able to destroy their tokens)_ and `Ownable` _(Makes sure we, the deployer, can mint or burn some CVOs)_. You can always play around with the wizard and customize your token as you like.
+
+<Image
+  alt="OpenZeppelin contracts Wizard"
+  src={`/static/images/Cryptocurrencies/contracts-wizard.png`}
+  width={730}
+/>
+
+### Remix editor
+
+Just right above the wizard, click the `Open in Remix` button. I will open a tab for the Remix IDE containing our code. Don't panic, this is just a tool to facilitate our task of deploying our token to the blockchain.
+
+Head over the `Solidity compiler` tab of the IDE and click on the `Compile contract` button. Compilation is just a fancy word for translation. It translates our human readable code of the token to machine language that a computer can understand, Ethereum in our case. Leave everything as default and after your compilation is successful _(green checkmark on the compile tab)_, go to the last `Deploy & run transactions` tabs. Switch the environment option to `injected web3`, it will open you metamask wallet and ask you to connect from it. Click `Next` and `Connect`.
+
+<Image
+  alt="Injected web3"
+  src={`/static/images/Cryptocurrencies/injected_web3.png`}
+  width={730}
+/>
+
+### Transaction gas and fees
+
+We're now inches away from deploying our CVO token to the Ethereum blockchain. However, there are some very important elements of the blockchain we did not tackle yet and that is : [gas and fees](https://ethereum.org/en/developers/docs/gas/).
+
+Like we already know, the blockchain is run by a network of computers of people like you and me. Making any transactions in the blockchain requires them to keep their computers on. They are in charge of their own maintenance cost, electricity bill, internet connection ,etc. So to keep the network liquid, those people, known as [validators](https://coinmarketcap.com/alexandria/glossary/validator) or [miners](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/) _(prior to the Ethereum 2.0 upgrade)_ are rewarded proportionaly to the amount of computational effort they offer to execute specific operations on the Ethereum network, this measurement is called `gas`.
+
+You can think of a gas as 1Mo of ram. If you run heavy programs on your computer, it eats a lot of your ram and you have to pay more on electricity. If your transaction is too complex, it can cost you more gas to run it.
+
+Then it's up to the person making the transaction to value a unit of gas to whatever amount of Ethers he likes, that is what `fee` stands for. So if you are willing to make a 30,000 gas worth transaction and place your fee to 0.000001 Ether, you will pay a roughly 30,000 x 0.000001 Ether = 0.03 Ether to run your transaction.
+
+Notice, however, that validators are incentivized to first pick the transactions they can benefit the most, so if you want your transaction to settle quick, you should bump your fees and if you can't afford much on fees, your transaction may end up pending all nights.
+
+When the network is congested, fees are high. [Here](https://ethgasstation.info/) is a website where you can have a glimpse on how much fee to place for a certain transaction duration at the moment.
+
+### Mainnet vs Testnet
+
+If you understand the concept of gas and fees, you should know immediately that deploying our CVO token will cost us some money because deployment of a token is already a transaction. The thing is we don't want to spend money especially with our CVO meme currency, do we? 😉. Neither do we developers when running some bigger and complex smart contracts to the blockchain for test. That's why testnets exist.
+
+Testnet are just fake blockchain where 1 Ether is worth nothing at all. But the whole system works the same as the mainnets, perfect for testing. So we are using the [Rinkeby testnet](https://www.rinkeby.io/) to deploy our CVO token but you can always deploy your token to the mainnet if it's a serious project and the process will look the same.
+
+Head over to your Metamask wallet and make it point to the rinkeby testnet. In the network dropdown above, click `show/hide test networks` and enable the show test network radio button. Now your Metamask wallet should have the Rinkeby testnet listed on the network dropdown. Select it.
+
+<Image
+  alt="Testnets"
+  src={`/static/images/Cryptocurrencies/testnet.png`}
+  width={730}
+/>
+
+### Rinkeby faucet
+
+Testnets work exactly the same as the mainnet, we should then always have some fake Ether to deploy our token to the testnet. You can claim some in the [Rinkeby faucet](https://faucets.chain.link/rinkeby) page on Chainlink. Go to the website, on the upper right click the `Connect wallet` button, make sure you have the Rinkeby testnet selected on `Network`, send request and now wait for your transaction to complete.
+
+<Image
+  alt="Rinkeby faucet"
+  src={`/static/images/Cryptocurrencies/faucet.png`}
+  width={730}
+/>
+
+Once your transaction is complete, you can open you Metamask wallet and see 0.1 ETH in it. Click the transaction under `Assets` tab and in `Receive` click `View on block explorer`.
+
+<Image
+  alt="View on block explorer"
+  src={`/static/images/Cryptocurrencies/view.png`}
+  width={730}
+/>
+
+This link will lead you to Etherscan, a block explorer where you can see all the information about your transactions and even of others which enforces the **transparency** nature of the blockchain.
+
+### Deploying the token
+
+Finally we're here. We have enough test Ethers now to deploy our CVO token so go ahead and return to the Remix IDE tab. You can see that it already pointed to the rinkeby testnet below the environment option, make sure you select the CVO contract in the `Contract` dropdown and click the `Deploy` button. You will see a confirmation dialog with Metamask and confirm the transaction. Metamask will automatically fill an acceptable amount of gas price _(fee)_ to send to.
+
+<Image
+  alt="Confirm deployment"
+  src={`/static/images/Cryptocurrencies/confirmdeploy.png`}
+  width={730}
+/>
+
+After you confirmed the transaction, open your wallet again and in `contract deployment` under the `Activity` tab, click `View on block explorer`. Wait for your transaction to have the green `success` sign. When your transaction completes, copy the `To` address, it's the address of your newly deployed token.
+
+<Image
+  alt="Token deployed"
+  src={`/static/images/Cryptocurrencies/deployed.png`}
+  width={730}
+/>
+
+Open Metamask again and above the `Assets` tab, click on `Import tokens`. paste in the token address, it will automatically detect its name and import the token.
+
+<Image
+  alt="200 cvo"
+  src={`/static/images/Cryptocurrencies/200cvo.png`}
+  width={730}
+/>
+
+We did it 🎉, we just deployed our own cryptocurrency to the Ethereum blockchain using the ERC-20 standard. Deploying to the mainnet is no different. We automatically have 200 amounts of CVO which refers to the `premint` value we typed in the wizard because we are the minter of this token. We can now send it to our customer for US dollars by just having to know their wallet address. Open the wallet, click on `send`, paste in the customer's wallet address, choose our CVO asset and type in the amount to send.
+
+<Image
+  alt="sell"
+  src={`/static/images/Cryptocurrencies/sell.png`}
+  width={730}
+/>
+
+You can also go to the Remix IDE and in `deployed contract` we can easily perform minter only operations like minting or burning tokens to manipulate the price of our token 😈.
+
+<Image
+  alt="mintersonly"
+  src={`/static/images/Cryptocurrencies/mintersonly.png`}
+  width={730}
+/>
