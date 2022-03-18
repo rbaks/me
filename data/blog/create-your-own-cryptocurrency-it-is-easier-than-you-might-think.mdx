@@ -60,11 +60,11 @@ The value of these cryptocurrencies comes from the duality of **demand** and **s
 
 If something has to be clear, is that yes, cryptocurrency coins are difficult to create but tokens aren't.
 
-Now is the fun part, we want to create our own token which we name CVO _(just to sound like covid 😉)_ . It will be the token people will buy our vaccines with and make us millionaires 🤑. We will create the CVO token whithin the Ethereum blockchain protocol which it's native currency Ether is the second to Bitcoin in [market capitalization](https://coinmarketcap.com/) _(The total market value of a cryptocurrency's circulating supply)_.
+Now is the fun part, we want to create our own token which we name CVO _(just to sound like covid 😉)_ . It will be the token people will buy our vaccines with and make us millionaires 🤑. We will create the CVO token whithin the Ethereum blockchain protocol which it's native currency Ether is the second to Bitcoin in terms of [market capitalization](https://coinmarketcap.com/) _(The total market value of a cryptocurrency's circulating supply)_.
 
 ### ERC-20 Token standard
 
-Under the hood, every token are just code deployed to the blockchain, they are known as [smart contracts](https://en.wikipedia.org/wiki/Smart_contract). With Ethereum, we can make our smart contracts do whatever we like as they are [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness). However, we just want our token to be purchased by our customers, exchanged between them, minted and burned. Thankfully, some smart guys from [OpenZeppelin](https://openzeppelin.com/) designed standards to follow for a number of token use cases. In particular, we are interested in the [ERC-20 token standard](https://docs.openzeppelin.com/contracts/4.x/erc20), which best suits our cryptocurrency as a [fungible token](https://cointelegraph.com/nonfungible-tokens-for-beginners/fungible-vs-nonfungible-tokens-what-is-the-difference).
+Under the hood, every token are just code deployed to the blockchain, they are known as [smart contracts](https://en.wikipedia.org/wiki/Smart_contract). With Ethereum, we can make our smart contracts do whatever we like as they are [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness). However, we just want our token to be purchased by our customers, exchanged between them, minted and burned. Thankfully, some smart guys from [OpenZeppelin](https://openzeppelin.com/) designed standards to follow for a number of token use cases. We are particularly interested in the [ERC-20 token standard](https://docs.openzeppelin.com/contracts/4.x/erc20) which best suits our cryptocurrency as a [fungible token](https://cointelegraph.com/nonfungible-tokens-for-beginners/fungible-vs-nonfungible-tokens-what-is-the-difference).
 
 ### ERC-20 Wallet
 
@@ -104,11 +104,11 @@ Head over the `Solidity compiler` tab of the IDE and click on the `Compile contr
 
 We're now inches away from deploying our CVO token to the Ethereum blockchain. However, there are some very important elements of the blockchain we did not tackle yet and that is : [gas and fees](https://ethereum.org/en/developers/docs/gas/).
 
-Like we already know, the blockchain is run by a network of computers of people like you and me. Making any transactions in the blockchain requires them to keep their computers running. They are in charge of their own maintenance cost, electricity bill, internet connection and so on. So to keep the network liquid, those people, known as [validators](https://coinmarketcap.com/alexandria/glossary/validator) or [miners](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/) _(prior to the Ethereum 2.0 upgrade)_ are rewarded proportionaly to the amount of computational effort they offer to execute specific operations on the Ethereum network, this measurement is called `gas`.
+Like we already know, the blockchain is run by a network of computers of people like you and me. Making any transactions in the blockchain requires them to keep their computers running. They are in charge of their own maintenance cost, electricity bill, internet connection and so on. So to keep the network liquid, those people, known as [validators](https://coinmarketcap.com/alexandria/glossary/validator) or [miners](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/) _(prior to the Ethereum 2.0 upgrade)_, are rewarded proportionaly to the amount of computational effort they offer to execute specific operations on the Ethereum network, this measurement is called `gas`.
 
 You can think of a gas as 1Mo of ram. If you run heavy programs on your computer, it eats a lot of your ram and you have to pay more on electricity. If your transaction is too complex, it can cost you more gas to run it.
 
-Then it's up to the person making the transaction to value a unit of gas to whatever amount of Ether he likes, that is what `fee` stands for. So if you are willing to make a 30,000 gas worth transaction and place your fee to 0.000001 Ether, you will pay a roughly 30,000 x 0.000001 Ether = 0.03 Ether to run your transaction.
+Then it's up to the person making the transaction to value a unit of gas to whatever amount of Ether he likes, that is what `fee` stands for. So if you are willing to make a 30,000 gas worth transaction and place your fee to 0.000001 ETH, you will pay a roughly 30,000 x 0.000001 ETH = 0.03 ETH to run your transaction.
 
 Do note, however, that validators are incentivized to first pick the transactions they can benefit the most, so if you want your transaction to settle quick, you should bump your fees and if you can't afford much on fees, your transaction may end up pending all nights.
 
@@ -118,7 +118,7 @@ When the network is congested, fees are high. You can have a glimpse of much are
 
 If you understood the concept of gas and fees, you should immediately be aware that deploying our CVO token will cost us some money because deployment is already a transaction of his own. The thing is we don't want to spend money with our CVO meme currency, do we? 😉. Neither do we developers when running some bigger and complex smart contracts to the blockchain for test. That's why testnets exist.
 
-Testnet are just fake blockchain where 1 Ether is worth nothing at all. But the whole system works the same as the mainnets, perfect for testing. So we are using the [Rinkeby testnet](https://www.rinkeby.io/) to deploy our CVO token but you can always deploy your token to the mainnet if it's a serious project and the process will look the same.
+Testnet are just fake blockchain where 1 Ether is worth nothing at all. But the whole system works the same as the mainnet _(the real blockchain)_, perfect for testing. So we are using the [Rinkeby testnet](https://www.rinkeby.io/) to deploy our CVO token but you can always deploy your token to the mainnet if it's a serious project and the process will look the same.
 
 Head over to your Metamask wallet and make it point to the rinkeby testnet. In the network dropdown above, click `show/hide test networks` and enable the show test network radio button. Now your Metamask wallet should have the Rinkeby testnet listed on the network dropdown. Select it.
 
@@ -138,7 +138,7 @@ Testnets work exactly the same as the mainnet, we should then always have some t
   width={730}
 />
 
-Once your transaction is complete, you can open you Metamask wallet and see your hard-earned 0.1 test Ether in it. Click the transaction under `Assets` tab and in `Receive` click `View on block explorer`.
+Once your transaction is complete, you can open your Metamask wallet and see your hard-earned 0.1 test Ether in it. Click the transaction under `Assets` tab and in `Receive` click `View on block explorer`.
 
 <Image
   alt="View on block explorer"
@@ -158,7 +158,7 @@ Finally we're here. We have enough test Ethers now to deploy our CVO token so go
   width={730}
 />
 
-After you confirmed the transaction, open your wallet again and in `contract deployment` under the `Activity` tab, click `View on block explorer`. Wait for your transaction to have the green `success` label. When your transaction completes, copy the `To` address, it's the address of your newly deployed token.
+After you confirmed the transaction, open your wallet again and in `contract deployment` under the `Activity` tab, click `View on block explorer`. Wait for your transaction to have the green `success` label. When your transaction completes, copy the `To` address, it's the address of your newly deployed token. Yes tokens _(contracts)_ also have addresses, you can learn more [here](https://ethereum.org/en/developers/docs/accounts/);
 
 <Image
   alt="Token deployed"
