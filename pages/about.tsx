@@ -45,17 +45,12 @@ export default function About() {
               Email me:{' '}
               <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
             </li>
-            <li>
-              <a href="AndrianinaResume.pdf" download="AndrianinaResume">
-                My Resume
-              </a>
-            </li>
           </ul>
           <h2>Bio</h2>
           <h3>Headline</h3>
           <p>
-            <strong>Andrianina Rabakoson</strong>, Software developer and
-            content creator
+            <strong>Andrianina Rabakoson</strong>, Software developer and data science student
+
           </p>
           <h3>Summary</h3>
           <p>
@@ -121,8 +116,6 @@ export default function About() {
             <li>Open source software</li>
             <li>Technical blogging</li>
             <li>Data Science</li>
-            <li>Day trading</li>
-            <li>Blockchain and Crypto</li>
           </ul>
         </div>
       </div>

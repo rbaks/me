@@ -1,11 +1,11 @@
 export const siteMetadata = {
-  title: 'Andrianina Rabakoson – Developer and content creator',
+  title: 'Andrianina Rabakoson – Developer and data science student',
   description: 'Personal portfolio website and blog',
   author: {
     name: 'Andrianina Rabakoson',
-    headLine: 'Software developer and content creator',
+    headLine: 'Software developer data science student',
     zingFactor:
-      'Making a better world through code. Sharing knowledge by leveraging open source projects.',
+      'What\'s your Ikigai?',
     image: '/avatar.jpg'
   },
   social: {
@@ -19,7 +19,7 @@ export const siteMetadata = {
   siteRepo: 'https://github.com/rbaks/me',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/banner.png',
-  email: 'rabakoson@protonmail.com',
+  email: 'rabakoson@proton.me',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
