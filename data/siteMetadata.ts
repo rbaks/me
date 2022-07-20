@@ -1,9 +1,9 @@
 export const siteMetadata = {
-  title: 'Andrianina Rabakoson – Developer and data science student',
+  title: 'Andrianina Rabakoson – Developer',
   description: 'Personal portfolio website and blog',
   author: {
     name: 'Andrianina Rabakoson',
-    headLine: 'Software developer and data science student',
+    headLine: 'Software developer',
     zingFactor:
   'Every great developer you know got there by solving problems they were unqualified to solve until they actually did it - Patrick McKenzie',
     image: '/avatar.jpg'
