@@ -215,83 +215,73 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@motionone/animation@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.6.2.tgz#425a6d631580a9528b88b52cb802822f85b9d11e"
-  integrity sha512-LOq9SYwNSEg1aSM16a1HlQPIxEC+XTIq3+DwjXKH+ORHCmhULSmdWhjOr+7Yn1Up4fejbJgdW04nGnPuMsnjYA==
+"@motionone/animation@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.13.2.tgz#174a55a3bac1b6fb314cc1c3627093dc790ae081"
+  integrity sha512-YGWss58IR2X4lOjW89rv1Q+/Nq/QhfltaggI7i8sZTpKC1yUvM+XYDdvlRpWc6dk8LviMBrddBJAlLdbaqeRmw==
   dependencies:
-    "@motionone/easing" "^10.6.2"
-    "@motionone/types" "^10.6.2"
-    "@motionone/utils" "^10.6.2"
+    "@motionone/easing" "^10.13.2"
+    "@motionone/types" "^10.13.2"
+    "@motionone/utils" "^10.13.2"
     tslib "^2.3.1"
 
-"@motionone/dom@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.6.2.tgz#45bb57c48a438ed2dc0b7b86f4b20003ee0358a5"
-  integrity sha512-AjYDuHIY9LfN7BARJ9bHZOjACh0Vkqc8Mhohud4VBDg6vAx/FnS1dh8WhMW9kS15Kd6DU1wKl5Qt65md2hAU8g==
+"@motionone/dom@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.13.2.tgz#b6eb7a7cf8a17792ebcfea00d0534086d15bdb86"
+  integrity sha512-THCRW+M7JUTbHRiWFJU13pju7bZlnPjZz9VDXA/h/Qj/Or7LvzKY/XfEy45rUlO0wXSa4lQ+1DGlrZNewamdDA==
   dependencies:
-    "@motionone/animation" "^10.6.2"
-    "@motionone/easing" "^10.6.2"
-    "@motionone/generators" "^10.6.2"
-    "@motionone/types" "^10.6.2"
-    "@motionone/utils" "^10.6.2"
+    "@motionone/animation" "^10.13.2"
+    "@motionone/generators" "^10.13.2"
+    "@motionone/types" "^10.13.2"
+    "@motionone/utils" "^10.13.2"
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
-"@motionone/easing@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.6.2.tgz#70cd3c19884a76240bdc62f3d8b0f44a7469737f"
-  integrity sha512-zzagQP2pu7lNcKOX1HQA+w4mb47ETsyxqXOQf7572QnlGc6pQTCuUZmRIhwKjqn5VMA1kuS6XIY66KGF1284Ow==
+"@motionone/easing@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.13.2.tgz#8f10c8624000eb741312941d3f578ed05154e06f"
+  integrity sha512-3HqctS5NyDfDQ+8+cZqc3Pu7I6amFCt9zDUjcozHyFXHh4PKYHK4+GJDFjJIS8bCAF2BrJmpmduDQ2V7lFEYeQ==
   dependencies:
-    "@motionone/utils" "^10.6.2"
+    "@motionone/utils" "^10.13.2"
     tslib "^2.3.1"
 
-"@motionone/generators@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.6.2.tgz#8e7057e4ee881a5cd91c4fb09b1c955fa223710e"
-  integrity sha512-PofvpII7izwoxpJbwEpKBttRw943AogMBsGEXfxbD7WM7qCDbL0hBpiuxVgGqi9PtRG/AhNqD1M0HcTz8TePlQ==
+"@motionone/generators@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.13.2.tgz#dd972195b899e7a556d65bd27fae2fd423055e10"
+  integrity sha512-QMoXV1MXEEhR6D3dct/RMMS1FwJlAsW+kMPbFGzBA4NbweblgeYQCft9DcDAVpV9wIwD6qvlBG9u99sOXLfHiA==
   dependencies:
-    "@motionone/types" "^10.6.2"
-    "@motionone/utils" "^10.6.2"
+    "@motionone/types" "^10.13.2"
+    "@motionone/utils" "^10.13.2"
     tslib "^2.3.1"
 
-"@motionone/react@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/react/-/react-10.6.2.tgz#91651b782ee3f79eda7aa81b21b62da5e8bc6ebf"
-  integrity sha512-LsCoyvsZhK8+gpxmOs1RESApB+M0t3KSraRE0HiHAO0AMBI3NNeSXWBF3Hz2OyRSMa75cL7evnWsofrN3ilDBA==
+"@motionone/svelte@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/svelte/-/svelte-10.13.2.tgz#3b836d986ae60781383b901ce0003e776972f197"
+  integrity sha512-p6gH7oGhbonHzrPeUPzZiU3dx2yjDYQ7K00w9GaTbXBfmH/+rjUQ6vvG5SPvjY6BLtMK3/FMK512WvOMtvDQPQ==
   dependencies:
-    "@motionone/dom" "^10.6.2"
+    "@motionone/dom" "^10.13.2"
+    tslib "^2.3.1"
+
+"@motionone/types@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.13.2.tgz#c560090d81bd0149e7451aae23ab7af458570363"
+  integrity sha512-yYV4q5v5F0iADhab4wHfqaRJnM/eVtQLjUPhyEcS72aUz/xyOzi09GzD/Gu+K506BDfqn5eULIilUI77QNaqhw==
+
+"@motionone/utils@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.13.2.tgz#ce79bfe1d133493c217cdc0584960434e065648d"
+  integrity sha512-6Lw5bDA/w7lrPmT/jYWQ76lkHlHs9fl2NZpJ22cVy1kKDdEH+Cl1U6hMTpdphO6VQktQ6v2APngag91WBKLqlA==
+  dependencies:
+    "@motionone/types" "^10.13.2"
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
-"@motionone/svelte@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/svelte/-/svelte-10.6.2.tgz#6d470efc2aa445b59d2ce51c5ac87952f3f0335e"
-  integrity sha512-WFnjXHf43P4w8dEFrd8m0wxs3kRr/dZCVLXDbC+eejaRxJCEyeaJDNzGkWyGxDMXST897rQNoDy5p5WDsszW2A==
+"@motionone/vue@^10.13.2":
+  version "10.13.2"
+  resolved "https://registry.yarnpkg.com/@motionone/vue/-/vue-10.13.2.tgz#90e199c84ed6f17c0ae28bc793d0cce55edb8962"
+  integrity sha512-DfMzOUwKlzyjpwxF+RP1Q74ClmeoanPAeSGfD/JTvAyR1W6ARCOBMFpdgDvile1o7FNgHGx2RHt8210MsOE59g==
   dependencies:
-    "@motionone/dom" "^10.6.2"
-    tslib "^2.3.1"
-
-"@motionone/types@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.6.2.tgz#1d0cb3694d1898ea8ede621c1c8873e6a210d1b9"
-  integrity sha512-7YH5OGOhFN2fhxAc2L4i5LFQ/GqliiDt8DvN6htGXEMAleq1o0CVHlHdXyLG9l9eBM1NHlU75BjK3eLouSSFzA==
-
-"@motionone/utils@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.6.2.tgz#381fc2a9da78c3ca49fdc0e4c3123e012c70cb86"
-  integrity sha512-zy0pLX7aaDfKoO8nKZbjFGjjZpXNmWo3ae9S/WzoQ2U7a7/ePLa9gSzFDefm2553FtLTaaYecnSf1FH2BTVaww==
-  dependencies:
-    "@motionone/types" "^10.6.2"
-    hey-listen "^1.0.8"
-    tslib "^2.3.1"
-
-"@motionone/vue@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@motionone/vue/-/vue-10.6.2.tgz#b7875bd3553853f0a00a9cac0ac9f0091872bc32"
-  integrity sha512-pwhV9n4WV/w86Rqzou88pfWIv6Andgib3HJP+/LcWdjNcc2rFyJ9g9wpT9MDS7QO3ouXl6xXljTD5FBXN60/3g==
-  dependencies:
-    "@motionone/dom" "^10.6.2"
+    "@motionone/dom" "^10.13.2"
     tslib "^2.3.1"
 
 "@next/env@12.1.0":
@@ -3254,16 +3244,17 @@ minimist@^1.1.1, minimist@^1.2.0:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-motion@^10.6.2:
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/motion/-/motion-10.6.2.tgz#f308e861973c885529f59c3cd40dcc467072a07c"
-  integrity sha512-xvmWg7GlcNZwcddenQ25uqmlIsSWwFKS1C7EDpwQB1hjeJf2zFsdzM0CPSzZ+eC0qh3RXgRv7R6r4AthZiv4Qg==
+motion@^10.13.3:
+  version "10.13.3"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-10.13.3.tgz#257fca5a9bc4173efe708ed6cbee8c3d0a859a1c"
+  integrity sha512-lfBuoZL8xo0djAD3zGrMuSuc4J9MquE6hzRCsO9cVp+DgIUvNmvbM7+7SrZtpjLKxPWbppm+P56FRtVvMcGj1A==
   dependencies:
-    "@motionone/animation" "^10.6.2"
-    "@motionone/dom" "^10.6.2"
-    "@motionone/react" "^10.6.2"
-    "@motionone/svelte" "^10.6.2"
-    "@motionone/vue" "^10.6.2"
+    "@motionone/animation" "^10.13.2"
+    "@motionone/dom" "^10.13.2"
+    "@motionone/svelte" "^10.13.2"
+    "@motionone/types" "^10.13.2"
+    "@motionone/utils" "^10.13.2"
+    "@motionone/vue" "^10.13.2"
 
 mri@^1.1.0:
   version "1.2.0"
