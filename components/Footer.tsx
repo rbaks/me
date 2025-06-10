@@ -41,7 +41,7 @@ export default function Footer() {
           <ExternalLink href={siteMetadata.social.linkedin}>
             LinkedIn
           </ExternalLink>
-          <ExternalLink href={siteMetadata.social.facebook}>
+          <ExternalLink href={siteMetadata.social.huggingface}>
             Facebook
           </ExternalLink>
         </div>
