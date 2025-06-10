@@ -1,17 +1,16 @@
 export const siteMetadata = {
-  title: 'Andrianina Rabakoson – Developer',
+  title: 'Andrianina Rabakoson – Machine Learning',
   description: 'Personal portfolio website and blog',
   author: {
     name: 'Andrianina Rabakoson',
-    headLine: 'Software developer',
-    zingFactor:
-  'Every great developer you know got there by solving problems they were unqualified to solve until they actually did it - Patrick McKenzie',
+    headLine: 'Machine learning, software',
+    zingFactor: 'I like applied maths with a bit of tech.',
     image: '/avatar.jpg'
   },
   social: {
     github: 'https://github.com/rbaks',
     linkedin: 'https://www.linkedin.com/in/arabakoson/?locale=en_US',
-    facebook: 'https://web.facebook.com/andrianina.rabakoson.79'
+    huggingface: 'https://huggingface.co/rbaks'
   },
   language: 'en-us',
   theme: 'system',
@@ -19,7 +18,7 @@ export const siteMetadata = {
   siteRepo: 'https://github.com/rbaks/me',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/banner.png',
-  email: 'rabakoson@proton.me',
+  email: 'a.rabakoson@pm.me',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics

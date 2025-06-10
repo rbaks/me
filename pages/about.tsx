@@ -32,11 +32,11 @@ export default function About() {
               </a>
             </li>
             <li>
-              Facebook:{' '}
+              HuggingFace:{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={siteMetadata.social.facebook}
+                href={siteMetadata.social.huggingface}
               >
                 Andrianina Rabakoson
               </a>
